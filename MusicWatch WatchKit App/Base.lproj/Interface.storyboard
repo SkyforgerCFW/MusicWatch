@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="HiP-Mb-ncq">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="1" id="haU-9J-Lqv">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
+                                    <connections>
+                                        <action selector="playSound1" destination="AgC-eL-Hgc" id="Sbg-jH-qu1"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="2" id="zzJ-tN-OGH">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
+                                    <connections>
+                                        <action selector="playSound2" destination="AgC-eL-Hgc" id="3DX-ak-KZB"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="OZG-c6-tOn">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="3" id="Agw-h2-uDC">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
+                                    <connections>
+                                        <action selector="playSound3" destination="AgC-eL-Hgc" id="8OC-if-wMO"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="left" title="4" id="N9S-49-qi4">
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
+                                    <connections>
+                                        <action selector="playSound4" destination="AgC-eL-Hgc" id="uhm-11-ccX"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="qJN-xN-hBA" kind="relationship" relationship="nextPage" id="jyQ-9Q-cjS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="3" y="147"/>
+        </scene>
+        <!--TableInterfaceController-->
+        <scene sceneID="1gN-Gg-Gbr">
+            <objects>
+                <controller identifier="TableInterfaceController" id="qJN-xN-hBA" customClass="TableInterfaceController" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="DwZ-7F-4v3">
+                            <items>
+                                <tableRow identifier="Row" id="44v-5E-jkP" customClass="SoundRow" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" id="xQ1-W7-kch">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="OsS-Td-oYV"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="OsS-Td-oYV" id="SBQ-Gz-zrV"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="DwZ-7F-4v3" id="YJc-PG-G1r"/>
+                        <segue destination="Z8h-3v-gTj" kind="relationship" relationship="nextPage" id="OYV-vX-7xd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="233" y="149"/>
+        </scene>
+        <!--PlayInterfaceController-->
+        <scene sceneID="6qX-Lj-dAi">
+            <objects>
+                <controller identifier="PlayInterfaceController" id="2Ps-e1-ift" customClass="PlayInterfaceController" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Label" id="ctN-bI-v51">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                        <volumeControlView height="0.5" alignment="center" verticalAlignment="center" id="qGs-p1-1H5"/>
+                        <group width="1" height="0.29999999999999999" alignment="center" verticalAlignment="bottom" id="urr-Jb-gtg">
+                            <items>
+                                <button width="0.20000000000000001" height="0.59999999999999998" alignment="left" verticalAlignment="center" backgroundImage="gobackward.10" catalog="system" id="RFi-qf-Sbz">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="seekBackwardBtn" destination="2Ps-e1-ift" id="Tzh-0R-qUW"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="center" verticalAlignment="bottom" backgroundImage="playpause.fill" catalog="system" id="8EJ-2J-dNe">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="playPauseBtn" destination="2Ps-e1-ift" id="r7J-SE-TS8"/>
+                                    </connections>
+                                </button>
+                                <button width="0.20000000000000001" height="0.59999999999999998" alignment="right" verticalAlignment="center" backgroundImage="goforward.10" catalog="system" id="2EK-38-MUI">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="seekForwardBtn" destination="2Ps-e1-ift" id="hx6-0z-JHD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="songName" destination="ctN-bI-v51" id="pHG-lt-olY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="226" y="394"/>
+        </scene>
+        <!--Custom Interface Controller-->
+        <scene sceneID="0Hv-yU-lZj">
+            <objects>
+                <controller id="Z8h-3v-gTj" customClass="CustomInterfaceController" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="0.5" alignment="left" title="Record" id="WCI-r3-k2Y">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.66438633419689119" green="0.084895468596423704" blue="0.012517008678655607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="recordBtn" destination="Z8h-3v-gTj" id="44x-fa-iuM"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.5" alignment="left" title="Play" id="nsg-wx-EGe">
+                            <color key="backgroundColor" red="0.049878021692943322" green="0.42806832901554404" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="playBtn" destination="Z8h-3v-gTj" id="g1h-sn-x0m"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="450" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gobackward.10" catalog="system" width="124" height="128"/>
+        <image name="goforward.10" catalog="system" width="124" height="128"/>
+        <image name="playpause.fill" catalog="system" width="128" height="72"/>
+    </resources>
+</document>

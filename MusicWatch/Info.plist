@@ -45,6 +45,8 @@
 	<string>Main</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Used for recording sound clips</string>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

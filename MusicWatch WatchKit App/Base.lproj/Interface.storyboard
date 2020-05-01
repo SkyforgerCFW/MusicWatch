@@ -1,56 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qJN-xN-hBA">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
-                    <items>
-                        <group width="1" height="0.5" alignment="left" id="HiP-Mb-ncq">
-                            <items>
-                                <button width="0.5" height="1" alignment="left" title="1" id="haU-9J-Lqv">
-                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
-                                    <connections>
-                                        <action selector="playSound1" destination="AgC-eL-Hgc" id="Sbg-jH-qu1"/>
-                                    </connections>
-                                </button>
-                                <button width="0.5" height="1" alignment="left" title="2" id="zzJ-tN-OGH">
-                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
-                                    <connections>
-                                        <action selector="playSound2" destination="AgC-eL-Hgc" id="3DX-ak-KZB"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="0.5" alignment="left" id="OZG-c6-tOn">
-                            <items>
-                                <button width="0.5" height="1" alignment="left" title="3" id="Agw-h2-uDC">
-                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
-                                    <connections>
-                                        <action selector="playSound3" destination="AgC-eL-Hgc" id="8OC-if-wMO"/>
-                                    </connections>
-                                </button>
-                                <button width="0.5" height="1" alignment="left" title="4" id="N9S-49-qi4">
-                                    <fontDescription key="font" type="system" weight="thin" pointSize="32"/>
-                                    <connections>
-                                        <action selector="playSound4" destination="AgC-eL-Hgc" id="uhm-11-ccX"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                    </items>
-                    <connections>
-                        <segue destination="qJN-xN-hBA" kind="relationship" relationship="nextPage" id="jyQ-9Q-cjS"/>
-                    </connections>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="3" y="147"/>
-        </scene>
         <!--TableInterfaceController-->
         <scene sceneID="1gN-Gg-Gbr">
             <objects>
@@ -73,7 +28,6 @@
                     </items>
                     <connections>
                         <outlet property="table" destination="DwZ-7F-4v3" id="YJc-PG-G1r"/>
-                        <segue destination="Z8h-3v-gTj" kind="relationship" relationship="nextPage" id="OYV-vX-7xd"/>
                     </connections>
                 </controller>
             </objects>
@@ -87,6 +41,14 @@
                         <label alignment="center" text="Label" id="ctN-bI-v51">
                             <fontDescription key="font" type="boldSystem" pointSize="16"/>
                         </label>
+                        <group width="1" height="0.029999999999999999" alignment="left" id="ttN-gi-K42">
+                            <items>
+                                <group width="0.5" alignment="left" id="xAm-Rz-96M">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </group>
                         <volumeControlView height="0.5" alignment="center" verticalAlignment="center" id="qGs-p1-1H5"/>
                         <group width="1" height="0.29999999999999999" alignment="center" verticalAlignment="bottom" id="urr-Jb-gtg">
                             <items>
@@ -112,34 +74,12 @@
                         </group>
                     </items>
                     <connections>
+                        <outlet property="progressBar" destination="xAm-Rz-96M" id="REB-NP-neI"/>
                         <outlet property="songName" destination="ctN-bI-v51" id="pHG-lt-olY"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="226" y="394"/>
-        </scene>
-        <!--Custom Interface Controller-->
-        <scene sceneID="0Hv-yU-lZj">
-            <objects>
-                <controller id="Z8h-3v-gTj" customClass="CustomInterfaceController" customModule="MusicWatch_WatchKit_App" customModuleProvider="target">
-                    <items>
-                        <button width="1" height="0.5" alignment="left" title="Record" id="WCI-r3-k2Y">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="backgroundColor" red="0.66438633419689119" green="0.084895468596423704" blue="0.012517008678655607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="recordBtn" destination="Z8h-3v-gTj" id="44x-fa-iuM"/>
-                            </connections>
-                        </button>
-                        <button width="1" height="0.5" alignment="left" title="Play" id="nsg-wx-EGe">
-                            <color key="backgroundColor" red="0.049878021692943322" green="0.42806832901554404" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="playBtn" destination="Z8h-3v-gTj" id="g1h-sn-x0m"/>
-                            </connections>
-                        </button>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="450" y="148"/>
         </scene>
     </scenes>
     <resources>

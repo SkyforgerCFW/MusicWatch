@@ -7,15 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		974059E024585B5B006044A4 /* Pikachu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 974059DB24585B5B006044A4 /* Pikachu.m4a */; };
-		974059E124585B5B006044A4 /* Squirtle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974059DC24585B5B006044A4 /* Squirtle.mp3 */; };
-		974059E224585B5B006044A4 /* Eevee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974059DD24585B5B006044A4 /* Eevee.mp3 */; };
-		974059E324585B5B006044A4 /* Bulbasaur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974059DE24585B5B006044A4 /* Bulbasaur.mp3 */; };
-		974059E424585B5B006044A4 /* Totodile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974059DF24585B5B006044A4 /* Totodile.mp3 */; };
-		974059E824586299006044A4 /* CustomInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974059E724586299006044A4 /* CustomInterfaceController.swift */; };
-		974059EC2458631B006044A4 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974059EB2458631B006044A4 /* FileManager-DocumentsDirectory.swift */; };
 		974059EE245871E4006044A4 /* PlayInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974059ED245871E4006044A4 /* PlayInterfaceController.swift */; };
-		974059F52458D74E006044A4 /* 14. Live & Learn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 974059F42458D74E006044A4 /* 14. Live & Learn.mp3 */; };
+		97417896245B6EDD0016A8C1 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974059EB2458631B006044A4 /* FileManager-DocumentsDirectory.swift */; };
 		974C00922457BAF700D5768B /* SoundPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974C00912457BAF700D5768B /* SoundPlaying.swift */; };
 		975950202457A667001A3149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9759501F2457A667001A3149 /* AppDelegate.swift */; };
 		975950222457A667001A3149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975950212457A667001A3149 /* SceneDelegate.swift */; };
@@ -27,7 +20,6 @@
 		975950372457A669001A3149 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 975950352457A669001A3149 /* Interface.storyboard */; };
 		975950392457A66A001A3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975950382457A66A001A3149 /* Assets.xcassets */; };
 		975950402457A66B001A3149 /* MusicWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9759503F2457A66B001A3149 /* MusicWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		975950452457A66B001A3149 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975950442457A66B001A3149 /* InterfaceController.swift */; };
 		975950472457A66B001A3149 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975950462457A66B001A3149 /* ExtensionDelegate.swift */; };
 		975950492457A66B001A3149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 975950482457A66B001A3149 /* Assets.xcassets */; };
 		97C59FA42457CA8300C2D516 /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C59FA32457CA8300C2D516 /* TableInterfaceController.swift */; };
@@ -77,16 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		974059DB24585B5B006044A4 /* Pikachu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pikachu.m4a; sourceTree = "<group>"; };
-		974059DC24585B5B006044A4 /* Squirtle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Squirtle.mp3; sourceTree = "<group>"; };
-		974059DD24585B5B006044A4 /* Eevee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Eevee.mp3; sourceTree = "<group>"; };
-		974059DE24585B5B006044A4 /* Bulbasaur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bulbasaur.mp3; sourceTree = "<group>"; };
-		974059DF24585B5B006044A4 /* Totodile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Totodile.mp3; sourceTree = "<group>"; };
-		974059E724586299006044A4 /* CustomInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInterfaceController.swift; path = "MusicWatch WatchKit App/CustomInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
 		974059EB2458631B006044A4 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		974059ED245871E4006044A4 /* PlayInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayInterfaceController.swift; sourceTree = "<group>"; };
 		974059F02458A6FE006044A4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
-		974059F42458D74E006044A4 /* 14. Live & Learn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14. Live & Learn.mp3"; sourceTree = "<group>"; };
 		974C00912457BAF700D5768B /* SoundPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlaying.swift; sourceTree = "<group>"; };
 		9759501C2457A667001A3149 /* MusicWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9759501F2457A667001A3149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +86,6 @@
 		975950382457A66A001A3149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9759503A2457A66A001A3149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9759503F2457A66B001A3149 /* MusicWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MusicWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		975950442457A66B001A3149 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		975950462457A66B001A3149 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		975950482457A66B001A3149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9759504A2457A66B001A3149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,19 +111,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		974059DA24585B5B006044A4 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				974059F42458D74E006044A4 /* 14. Live & Learn.mp3 */,
-				974059DB24585B5B006044A4 /* Pikachu.m4a */,
-				974059DC24585B5B006044A4 /* Squirtle.mp3 */,
-				974059DD24585B5B006044A4 /* Eevee.mp3 */,
-				974059DE24585B5B006044A4 /* Bulbasaur.mp3 */,
-				974059DF24585B5B006044A4 /* Totodile.mp3 */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
 		974059EF2458A6FE006044A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +143,7 @@
 		9759501E2457A667001A3149 /* MusicWatch */ = {
 			isa = PBXGroup;
 			children = (
+				974059EB2458631B006044A4 /* FileManager-DocumentsDirectory.swift */,
 				9759501F2457A667001A3149 /* AppDelegate.swift */,
 				975950212457A667001A3149 /* SceneDelegate.swift */,
 				975950232457A667001A3149 /* ViewController.swift */,
@@ -196,16 +168,12 @@
 		975950432457A66B001A3149 /* MusicWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				974059EB2458631B006044A4 /* FileManager-DocumentsDirectory.swift */,
-				974059E724586299006044A4 /* CustomInterfaceController.swift */,
 				974C00912457BAF700D5768B /* SoundPlaying.swift */,
-				975950442457A66B001A3149 /* InterfaceController.swift */,
 				97C59FA32457CA8300C2D516 /* TableInterfaceController.swift */,
 				97C59FA52457CC9400C2D516 /* SoundRow.swift */,
 				975950462457A66B001A3149 /* ExtensionDelegate.swift */,
 				975950482457A66B001A3149 /* Assets.xcassets */,
 				9759504A2457A66B001A3149 /* Info.plist */,
-				974059DA24585B5B006044A4 /* Audio */,
 				974059ED245871E4006044A4 /* PlayInterfaceController.swift */,
 			);
 			path = "MusicWatch WatchKit Extension";
@@ -332,12 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				974059E024585B5B006044A4 /* Pikachu.m4a in Resources */,
-				974059E324585B5B006044A4 /* Bulbasaur.mp3 in Resources */,
-				974059E224585B5B006044A4 /* Eevee.mp3 in Resources */,
-				974059E124585B5B006044A4 /* Squirtle.mp3 in Resources */,
-				974059F52458D74E006044A4 /* 14. Live & Learn.mp3 in Resources */,
-				974059E424585B5B006044A4 /* Totodile.mp3 in Resources */,
 				975950492457A66B001A3149 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +313,7 @@
 			files = (
 				975950242457A667001A3149 /* ViewController.swift in Sources */,
 				975950202457A667001A3149 /* AppDelegate.swift in Sources */,
+				97417896245B6EDD0016A8C1 /* FileManager-DocumentsDirectory.swift in Sources */,
 				975950222457A667001A3149 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,13 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				975950472457A66B001A3149 /* ExtensionDelegate.swift in Sources */,
-				974059EC2458631B006044A4 /* FileManager-DocumentsDirectory.swift in Sources */,
 				97C59FA62457CC9400C2D516 /* SoundRow.swift in Sources */,
 				974059EE245871E4006044A4 /* PlayInterfaceController.swift in Sources */,
 				974C00922457BAF700D5768B /* SoundPlaying.swift in Sources */,
 				97C59FA42457CA8300C2D516 /* TableInterfaceController.swift in Sources */,
-				974059E824586299006044A4 /* CustomInterfaceController.swift in Sources */,
-				975950452457A66B001A3149 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

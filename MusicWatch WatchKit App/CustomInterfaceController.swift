@@ -11,7 +11,7 @@ import AVFoundation
 
 
 class CustomInterfaceController: WKInterfaceController {
-    let saveURL = FileManager.default.getDocumentsDirectory().appendingPathComponent("recording.wav")
+    let saveURL: URL = URL(string: "nil")! //FileManager.default.getDocumentsDirectory().appendingPathComponent("recording.wav")
     var soundPlayer: AVAudioPlayer?
 
     override func awake(withContext context: Any?) {

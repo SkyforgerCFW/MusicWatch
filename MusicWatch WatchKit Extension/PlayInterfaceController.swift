@@ -14,14 +14,22 @@ class PlayInterfaceController: WKInterfaceController {
     var soundPlayer = SoundPlaying()
 //    var playing: Bool = false
     @IBOutlet var songName: WKInterfaceLabel!
-    var name: String = ""
+    @IBOutlet var slider: WKInterfaceSlider!
+    @IBOutlet var progressBar: WKInterfaceGroup!
+    var duration: Float = 0.0
+//    var timer: Timer = Timer(timeInterval: 1, repeats: true, block:{ _ in progressUpdate()})
+    //let displayLink = CADisplayLink(target: self, selector: #selector(update))
+    //var playbackSlider = WKInterfaceSlider()
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        name = context as? String ?? "No song playing"
-        songName.setText(name)
-        soundPlayer.setSession(named: name)
+        let song = context as! URL
+        songName.setText(song.lastPathComponent)
+        soundPlayer.setSession(named: song)
         soundPlayer.playPause()
+        duration = soundPlayer.length()
+        //RunLoop.current.add(timer, forMode: RunLoop.Mode.common)
+        _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in self.progressUpdate() })
         
         // Configure interface objects here.
     }
@@ -46,5 +54,13 @@ class PlayInterfaceController: WKInterfaceController {
     
     @IBAction func seekForwardBtn() {
         soundPlayer.seekForward()
+    }
+    
+    func progressUpdate() {
+        progressBar.setRelativeWidth(CGFloat(1 / (duration / soundPlayer.currTime())), withAdjustment: 0.1)
+    }
+    
+    func stopTimer() {
+        
     }
 }
